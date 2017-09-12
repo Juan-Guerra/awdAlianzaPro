@@ -1,0 +1,29 @@
+
+/* celular */
+
+@media all and (max-width: 320px) {  
+   
+    body{
+            background: #40DA27;
+            color: #FF00A2;
+    }
+    
+}
+
+/*tablet*/
+@media all and (min-width: 321px) and (max-width:720px){  
+    
+     body{
+             background: #FF0000;
+             color: #00FD00;
+     }
+ }
+
+ /*desktop*/
+ @media all and (min-width:721px) and (max-width:1920px){
+
+    body{
+        background: blue;
+        color: white;
+    }
+ }

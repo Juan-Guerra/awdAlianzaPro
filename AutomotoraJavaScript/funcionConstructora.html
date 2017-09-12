@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+
+<html>
+
+
+<body>
+
+
+    <h1> Automotora </h1>
+
+
+    <script>
+        var color = ["rojo", "verde", "negro", "azul"];
+        var anio = [1950, 1960, 1970, 1980];
+        var cilindrada = [2, 3, 4, 6, 8, 12];
+        var nroPuertas = [2,4];
+
+        function auto(color, anio, cilindrada, nroPuertas) {
+            this.color = color;
+            this.anio = anio;
+            this.cilindrada = cilindrada;
+            this.nroPuertas = nroPuertas;
+        }
+
+        var auto = new auto();
+
+        console.log(auto);
+    </script>
+</body>
+
+</html>

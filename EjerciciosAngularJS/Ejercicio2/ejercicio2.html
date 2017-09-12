@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cucufato">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Ejercicio2 </title>
+    <script src="./core/angular.min.js"></script>
+</head>
+
+<body>
+    <h1>2.1</h1>
+    <h3>Crear una estructura basica de angular con modulos y mostrando una variable del scope ,(llamada hola), del controlador
+        con el valor "Hola Mundo".</h3>
+    <script>
+        var app = angular.module("cucufato", []);
+        app.controller("micucufatocontroller", function ($scope) {
+            $scope.hola = "HolaMundo";
+            $scope.autos = [{
+                marca: 'Fiat',
+                color: 'Verde'
+            }, {
+                marca: 'Porsche',
+                color: 'Violeta'
+            }, {
+                marca: 'bmw',
+                color: 'Amarillo'
+            }, {
+                marca: 'Ferrari',
+                color: 'Rojo'
+            }, {
+                marca: 'Porsche',
+                color: 'Azul'
+            }];
+
+
+        });
+        app.controller("micucufatocontroller2", function ($scope) {
+            $scope.hola = "MyMundo";
+
+        });
+        app.filter('micucufiltro', function () {
+
+            return function (cadena) {
+               var z = "";
+               for(var i=0;i < cadena.length; i++){
+                /*ferrari TO FerrarI*/
+                //f e r r a r i 
+                if (i==0){
+                    z = z+cadena[i]
+                } else{
+                    i==0 
+                }
+
+               }
+                
+            }
+        });
+    </script>
+    <div ng-controller="micucufatocontroller">{{hola}}</div>
+
+    <h1> 2.2 </h1>
+    <h3>Hacer que el valor de la variable (hola) tome el valor de un input.</h3>
+    </br>
+    <div ng-controller="micucufatocontroller2">
+
+        <input type="text" ng-model="hola" />
+        <div>{{hola}}</div>
+    </div>
+
+    <h1>2.3</h1>
+    <h3>Crear un filtro personalizado en el que la primer y ultima letra de la marca de los autos sean mayuscula y a la vez se
+        podra filtrar el arreglo de autos por el valor de la marca ingresada en un input.</h3>
+    <div ng-controller="micucufatocontroller">
+        <div ng-repeat="mimarca in autos">
+            {{mimarca.marca | micucufiltro}}
+        </div>
+    </div>
+
+</body>
+
+
+</html>

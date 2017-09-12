@@ -1,0 +1,70 @@
+.contenedorayuda>div {
+    width: 100%;
+}
+
+
+/* celular */
+
+@media all and (max-width: 320px) {}
+
+
+/*tablet*/
+
+@media all and (min-width: 321px) and (max-width:720px) {}
+
+
+/*desktop*/
+
+@media all and (min-width:721px) and (max-width:1920px) {}
+
+.contenedor1 {
+    background-color: blue;
+    height: 30px;
+    width: 100%;
+}
+
+.contenedor2 {
+    background-color: red;
+    width: 50%;
+    height: 100px;
+    display: inline-block;
+}
+
+.contenedor3 {
+    background-color: violet;
+    width: 50%;
+    height: 100px;
+    display: inline-block;
+}
+
+.contenedor4 {
+    background-color: green;
+    width: 33%;
+    height: 100px;
+}
+
+.contenedor5 {
+    background-color: #0F9A74;
+    height: 50px;
+    width: 50%;
+}
+
+.contenedor6 {
+    background-color: yellow;
+    height: 50px;
+    width: 50%;
+}
+
+.contenedor7 {
+    background-color: cyan;
+    height: 30px;
+    width: 100%;
+}
+
+p {
+    font-weight: bold;
+    padding: 0px 10px 0px 10px;
+}
+
+
+/*padding:0px 10px 0px 10px;*/

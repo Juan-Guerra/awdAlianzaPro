@@ -1,0 +1,301 @@
+                        body {
+                            background: #bcb7b5;
+                            height: auto;
+                            margin-bottom: 0px;
+                        }
+
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                            display: inline-block;
+                        }
+
+                        .myname {
+                            color: #197caa;
+                            font-size: 12em;
+                            text-align: center;
+                            font-family: 'Crimson Text';
+                            text-shadow: 2px 2px 2px black;
+                            margin-top: -20px;
+                        }
+
+                        .bannername1 {
+                            color: #00456e;
+                            font-family: 'Crimson Text';
+                            font-size: 15em;
+                            text-shadow: 2px 2px 2px black;
+                        }
+
+                        .contenedor {
+                            text-align: center;
+                        }
+
+                        .contenedorTextImage {
+                            padding-top: 84px;
+                            margin-top: center;
+                            margin-bottom: center;
+                            text-align: center;
+                        }
+
+                        span {
+                            font-size: 12em;
+                        }
+
+                        p {
+                            color: #bcb7b5;
+                            font-size: 1em;
+                            padding: 15px;
+                        }
+
+                        .myscale {
+                            width: 200px;
+                            height: 200px;
+                            transition: 0.2s;
+                            display: inline-block;
+                        }
+
+                        .myscale:hover {
+                            width: 220px;
+                            height: 220px;
+                            cursor: pointer;
+                            display: inline-block;
+                        }
+
+                        h2 {
+                            font-size: 8em;
+                            color: white;
+                            font-family: 'oswald';
+                            text-align: center;
+                            text-shadow: 2px 2px 2px black;
+                            padding: 5px;
+                        }
+
+                        .myrotation {
+                            transform: rotateY(0deg);
+                        }
+
+                        .myrotation:hover {
+                            transform: rotateY(180deg);
+                            cursor: pointer;
+                        }
+
+                        a {
+                            font-size: 3em;
+                            text-decoration: none;
+                            color: #00456e;
+                            font-family: 'oswald';
+                            text-shadow: 1px 1px 2px black;
+                        }
+
+                        a:hover { color:#69d1ca;
+                            text-decoration: none;
+                        }
+
+                        h4 {
+                            font-size: 180%;
+                            color: #69d1ca;
+                            font-family: 'oswald';
+                            text-align: center;
+                            text-shadow: 1px 1px 2px black;
+
+                        }
+
+                        h4:hover {
+                            cursor: pointer;
+                        }
+
+                        #parallax {
+                            background-image: url("imgs/icons/mongo1.jpg");
+                            height: 800px;
+                            background-attachment: fixed;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            margin: 0 auto;
+                            padding: 0;
+                            width: 100%;
+                        }
+
+                        .glyphicon-menu-down {
+                            font-size: 12em;
+                            color: #197caa;
+                            text-align: center;
+                        }
+
+                        .glyphicon-menu-down:hover {
+                            font-size: 12em;
+                            color: #69d1ca;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+
+                            #parallax2 {
+                            background-image: url("imgs/icons/angular-parallax.png");
+                            height: 800px;
+                            background-attachment: fixed;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            margin: 0 auto;
+                            padding: 0;
+                            width: 100%;
+                        }
+
+                        #parallax3 {
+                            background-image: url("imgs/icons/nodejs-parallax.png");
+                            height: 800px;
+                            background-attachment: fixed;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            margin: 0 auto;
+                            padding: 0;
+                            width: 100%;
+                        }
+
+                        #parallaxfront {
+                            background-image: url("imgs/garden3a.jpg");
+                            height: 800px;
+                            background-attachment: fixed;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            margin: 0 auto;
+                            padding: 0;
+                            width: 100%;
+                        }
+
+                        #parallaxcastle {
+                            background-image: url("imgs/castle2a.jpg");
+                            height: 800px;
+                            background-attachment: fixed;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            margin: 0 auto;
+                            padding: 0;
+                            width: 100%;
+                        }
+
+                        #parallaxstepingcastle {
+                            background-image: url("imgs/insidecastle2a.jpg");
+                            height: 800px;
+                            background-attachment: fixed;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            margin: 0 auto;
+                            padding: 0;
+                            width: 100%;
+                        }
+
+                        .glyphicon-menu-up {
+                            font-size: 12em;
+                            color: #197caa;;
+                            text-align: center;
+                            padding-bottom: 10px;
+
+                        }
+
+                        .glyphicon-menu-up:hover {
+                            font-size: 12em;
+                            color: #69d1ca;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+
+                        h5 {
+                            color: #00456e;
+                            font-size: 8em;
+                            font-family: 'Playfair Display SC';
+                            text-align: center;
+                            text-shadow: 2px 2px 2px black;
+                        }
+
+                    
+
+
+
+                        h6 {
+                            font-size: 0.5em;
+                            font-family: 'oswald';
+
+                        }
+
+
+                        h6:hover {color:#69d1ca;
+                            font-size: 0.5em;
+                            font-family: 'oswald';
+
+                        }
+
+                        
+
+                       
+
+                        .well {
+                            background-color: black;
+                            display: inline-block;
+                            border: none;
+                            width: 55em;
+                            float: right;
+                            box-shadow: 5px 5px 25px black;
+                            padding:20px;
+                            padding-bottom: 40px;
+                            padding-left: 40px;
+                            padding-right: 40px;
+                            margin-top: 30px;
+                            margin-bottom: 30px;}
+
+                        .img-responsive {
+                            display: inline block;
+                            max-width: 50%;
+                            max-height: 50%;
+
+                            
+                        }
+
+                        .form-control{background-color: #bcb7b5;
+                                        color:#69d1ca;
+                                        border:none;}
+
+
+                        .form-control:hover{background-color: #bcb7b5;
+                            border:none;}
+
+                        .img-circle{margin-top: 25%;
+                                    max-width: 50%;
+                                    max-height: 50%;
+                                    float:center;
+                                    padding-left: 25px;
+                                    box-shadow:  2px 4px 10px #69d1ca;}
+
+                        #footer1 {
+                            width: 100%;
+                            /* Set the fixed height of the footer here */
+                            height: 625px;
+                            background-color: #252424;
+                            padding: 25px;
+                        }
+
+                     .footer2{
+                            position: absolute;
+                            width: 100%;
+                            height: 7em;
+                            background-color: black;
+                            margin-bottom: 0;
+                            
+                        }   
+
+                 .copyright{
+                            color: #69d1ca;
+                            font-size: 1.5em;
+                            text-align: center;
+                            padding-top: 35px;
+                            font-family: 'oswald';
+                        
+                    }     
+
+
+
+               
