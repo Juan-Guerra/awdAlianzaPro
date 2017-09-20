@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First AngularJS Try</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div ng-controller="StoreController as store">
+            <div ng-repeat="product in store.products">
+                <h1>{{product.name}}</h1>
+
+                <img ng-src="{{product.images[0].full}}" />
+                <em class="pull-right">{{product.price | currency}} </em>
+                <p> {{product.description}} </p>
+                <button class="btn btn-primary" ng-show="product.canPurchase">Add to Cart</button>
+            </div>
+        </div>
+
+
+        <section ng-controller="PanelController as panel">
+
+            <ul class="nav nav-pills">
+
+                <li ng-class="{ active:panel.isSelected(1) }">
+                    <a href ng-click="panel.SelectTab(1)">Description</a>
+                </li>
+
+                <li ng-class="{ active:panel.isSelected(2) }">
+                    <a href ng-click="panel.SelectTab(2)">Specifications</a>
+                </li>
+
+                <li ng-class="{ active:panel.isSelected(3) }">
+                    <a href ng-click="panel.SelectTab(3)">Reviews</a>
+                </li>
+            </ul>
+
+            <div panel="panel" ng-show="panel.isSelected(1)">
+
+                <p>{{product.description}}</p>
+            </div>
+            {{tab}}
+
+        </section>
+    </div>
+
+</body>
+
+
+
+
+<script type="text/javascript" src="angular.min.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

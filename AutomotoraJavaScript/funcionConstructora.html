@@ -2,30 +2,143 @@
 
 <html>
 
+<h1> Automotora </h1>
 
 <body>
 
-
-    <h1> Automotora </h1>
-
-
     <script>
-        var color = ["rojo", "verde", "negro", "azul"];
-        var anio = [1950, 1960, 1970, 1980];
-        var cilindrada = [2, 3, 4, 6, 8, 12];
-        var nroPuertas = [2,4];
-
-        function auto(color, anio, cilindrada, nroPuertas) {
+        function auto(modelo, marca, color, anio, cilindrada, nroPuertas, estado_de_compra) {
+            this.marca = marca;
+            this.modelo = modelo;
             this.color = color;
             this.anio = anio;
             this.cilindrada = cilindrada;
             this.nroPuertas = nroPuertas;
+            this.estado = estado;
+
         }
 
-        var auto = new auto();
+       
 
-        console.log(auto);
+
+        var autos = [{
+                    marca: "cadillac",
+                    modelo:"ctsV",
+                    color: "azul",
+                    anio: 2005,
+                    cilindrada: 4,
+                    nroPuertas: 4,
+                    estado_usado: true,
+                    estado_nuevo: false
+                },
+
+                    {marca: "dodge",
+                    modelo:"viperGts",
+                    color: "rojo",
+                    anio: 2016,
+                    cilindrada: 10,
+                    nroPuertas: 2,
+                    estado_usado: false,
+                    estado_nuevo: true
+
+                    },
+
+                {marca: "chevrolet",
+                    modelo:"corvette",
+                    color: "amarillo",
+                    anio: 2017,
+                    cilindrada: 4,
+                    nroPuertas: 2,
+                    estado_usado: false,
+                    estado_nuevo: true
+
+
+
+                },
+
+                {marca: "tesla",
+                    modelo:"sP85d",
+                    color: "blanco",
+                    anio: 2015,
+                    cilindrada: 4,
+                    nroPuertas: 2,
+                    estado_usado: false,
+                    estado_nuevo: true
+
+                },
+                {marca: "dodge",
+                    modelo:"challengerSrtHellcat",
+                    color: "verde",
+                    anio: 2016,
+                    cilindrada: 4,
+                    nroPuertas: 2,
+                    estado_usado: false,
+                    estado_nuevo: true
+                },
+
+                {marca: "dodge",
+                    modelo:"chargerSrtHellcat",
+                    color: "blanco",
+                    anio: 2016,
+                    cilindrada: 4,
+                    nroPuertas: 4,
+                    estado_usado: false,
+                    estado_nuevo: true
+
+                },
+                {marca: "hennessey",
+                    modelo:"venomGt",
+                    color: "negro",
+                    anio: 2017,
+                    cilindrada: 8,
+                    nroPuertas: 2,
+                    estado_usado: false,
+                    estado_nuevo: true
+
+                },
+                {marca: "shelby",
+                    modelo:"SscUltimateAero",
+                    color: "blanco",
+                    anio: 2017,
+                    cilindrada: 8,
+                    nroPuertas: 2,
+                    estado_usado: false,
+                    estado_nuevo: true
+
+                },
+                {marca: "shelby",
+                    modelo:"SscUltimateAeroXt",
+                    color: "negro",
+                    anio: 2017,
+                    cilindrada: 8,
+                    nroPuertas: 2,
+                    estado_usado: false,
+                    estado_nuevo: true
+
+                },
+                {marca: "shelby",
+                    modelo:"SscUltimateAeroXt",
+                    color: "negro",
+                    anio: 2017,
+                    cilindrada: 8,
+                    nroPuertas: 2,
+                    estado_usado: false,
+                    estado_nuevo: true
+
+                }];
+
+
+
+
+
+                   // var auto = new auto("marca","modelo","color", "anio", "cilindrada", "nroPuertas", "estado");
+
+
+
+
+                //}
     </script>
+
 </body>
 
 </html>
