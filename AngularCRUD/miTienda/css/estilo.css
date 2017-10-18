@@ -1,0 +1,29 @@
+body {
+  background-color: yellow;
+}
+
+footer {
+  height: 4em;
+  max-width: 100%;
+  background-color: red;
+}
+
+hr {
+  height: 5px;
+}
+ .discos{
+   background-color: green;
+ }
+
+ .usuarios{
+   background-color: blueviolet;
+ }
+
+ .locales{
+        background-color: white;
+ }
+
+ .nav{
+      background-color: blue;
+
+ }

@@ -1,0 +1,27 @@
+<div class="locales">
+
+    <h3>Locales</h3>
+
+    <hr>
+
+    <select name="localesOptionSelect" id="localesOptionSelect" ng-model="localesModelo.option">
+        <option ng-repeat="option in localesOptions" value="{{option.id}}">{{option.id | miBold}}</option>
+    </select>
+    <button ng-click="local in locales">
+        <span ng-hide="local.selected">
+            <label>{{local.id}}</label>
+        </span>
+
+        <span ng-show="local.selected">
+            <input type="text" ng-model="local.id">
+            <button ng-click "editarLocal(local)">Editar Info de Local</button>
+        </span>
+
+
+        <button ng-click="oneSelected(local)">Editar</button>
+        <button ng-click="borrarLocal($index,local)">Borrar</button>
+        <a href="#!locales/{{local.id}}">Ver detalle acerca del Local</a>
+
+        <hr>
+
+</div>
