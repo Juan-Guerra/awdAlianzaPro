@@ -1,0 +1,17 @@
+{
+  "discos": [
+    {
+      "nombre": "",
+      "autor": ""
+    }
+  ],
+
+  "locales": [""],
+
+  "usuarios": [
+    {
+      "nombre": "",
+      "email": ""
+    }
+  ]
+}
