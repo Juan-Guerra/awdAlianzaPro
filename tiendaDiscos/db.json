@@ -1,0 +1,26 @@
+{
+  "discos": [
+    {
+      "nombre": "",
+      "autor": "",
+      "detalle":""
+    }
+  ],
+
+  "locales": [""],
+
+  "usuarios": [
+    {
+      "nombre": "",
+      "email": "",
+      "role": "admin",
+      "password": false
+    },
+    {
+      "nombre": "",
+      "email": "",
+      "role": "public",
+      "password": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+ dbEditarDisco: function(editarDisco) {
+        var jsonData = JSON.stringify({
+          id: editarDisco.id,
+          nombre: editarDisco.nombre,
+          autor: editarDisco.autor
+        });
+
+        return $http({
+          method: "PUT",
+          url: "http://localhost:3000/discos/",
+          params: jsonData
+        });

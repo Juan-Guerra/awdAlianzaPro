@@ -1,0 +1,45 @@
+<div class="col-md-6 col-md-offset-3">
+
+    <h3>Locales</h3>
+
+    <hr>
+
+    <select name="localesOptionSelect" id="localesOptionSelect" ng-model="localesModelo.option">
+        <option ng-repeat="option in localesOptions" value="{{option.id}}">{{option.id | miBold}}</option>
+    </select>
+    <input type="text" ng-model="localesModelo.titulo" placeholder="Titulo...">
+
+    <button ng-click="agregarLocal()">Agregar</button>
+
+    <ul>
+        <li ng-repeat="local in localesS | toArray:false | filter:{titulo:miBold}">
+            <span ng-hide="local.selected">
+                <label>{{local.titulo}}</label>
+                <label>{{local.id}}</label>
+            </span>
+
+            <span ng-show="local.selected">
+                <input type="text" ng-model="local.id">
+                <button ng-click "editarLocal(local)">Guardar nuevo Local</button>
+            </span>
+
+
+            <button ng-click="oneSelected(local)">Editar</button>
+            <button ng-click="borrarLocal($index,local)">Borrar</button>
+            <a href="#!locales/{{local.id}}">Ver detalle acerca del Local</a>
+
+            <hr>
+        </li>
+    </ul>
+
+    cambiando valores:
+    <input ng-model="mapeoValorGeneral">
+    <hr> localesHTML:{{mapeoValorGeneral}} desde adentro: {{desdedirectiva1}}
+    <hr> lo que el controlador genera desde la directiva: {{mapeoValorDirectiva}}
+    <hr> valor de mensaje: {{mensaje}}
+    <hr>
+
+    <test data="{{mapeoValorGeneral}}" desdedirectiva1="mapeoValorDirectiva1"='mapeoValorDirectiva' clickhi='clickHiGeneral(mensaje)'></test>
+</div>
+
+<back-button/>

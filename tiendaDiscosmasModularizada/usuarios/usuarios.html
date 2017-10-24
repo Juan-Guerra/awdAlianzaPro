@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<div class="col-md-6 col-md-offset-3">
+
+    <h3>Usuarios</h3>
+    <h4>Ingresar Datos</h4>
+
+    <ul>
+        <li ng-repeat="usuario in usuarios">
+            <span ng-hide="usuario.selected">
+                <label>{{usuario.nombre}}</label>
+                <label>{{usuario.email}}</label>
+            </span>
+
+            <span ng-show="usuario.selected">
+                <input type="text" ng-model="usuario.nombre">
+                <button ng-click="agregarUsuario(usuario)">Agregar Usuario</button>
+                <button ng-click="editarUsuario(usuario)">Editar Usuario</button>
+            </span>
+
+            <button ng-click="oneSelected(usuario)">Editar Usuario</button>
+            <button ng-click="borrarUsuario($index,usuario)">Borrar Usuario</button>
+        </li>
+    </ul>
+</div>
+
+</html>
