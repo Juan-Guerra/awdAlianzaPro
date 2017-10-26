@@ -78,5 +78,7 @@ app.run([
       if (restrictedPage && !loggedIn) {
           $location.path('/');
       }
+
+
     });
   }]);

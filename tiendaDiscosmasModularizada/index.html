@@ -31,31 +31,31 @@
 
 
 
-    <div ng-include="'/estaticas/nav.html'"></div>
-
-
-
-    <div ng-include="'/estaticas/footer.html'"></div>
-
+    <div ng-include src="'./views/base/estaticas/nav.html'"></div>
     <div ng-view></div>
+    <div ng-include src="'./views/base/estaticas/footer.html'"></div>
+
+
+    <div class="fondoJuan"></div>
 
     <!-- meter TODOS los JS de mi app!!! (donde tambien van las directivas...) -->
 
-    <script src="./app.js"></script>
-    <script src="./central/centralController.js"></script>
-    <script src="./central/enrutadorController.js"></script>
-    <script src="./locales/localesController.js"></script>
-    <script src="./locales/localesFactory.js"></script>
-    <script src="./usuarios/usuariosController.js"></script>
-    <script src="./usuarios/usuariosFactory.js"></script>
-    <script src="./discos/discosController.js"></script>
-    <script src="./discos/discosDetalleController.js"></script>
-    <script src="./discos/discosFactory.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/app/central/centralController.js"></script>
+    <script src="./app/central/enrutadorController.js"></script>
+    <script src="./app/locales/localesController.js"></script>
+    <script src="./app/locales/localesFactory.js"></script>
+    <script src="./app/usuarios/usuariosController.js"></script>
+    <script src="./app/usuarios/usuariosFactory.js"></script>
+    <script src="./app/discos/discosController.js"></script>
+    <script src="./app/directivas/botonRegreso.js"></script>
+    <script src="./app/discos/discosDetalleController.js"></script>
+    <script src="./app/discos/discosFactory.js"></script>
 
 
-    <script src="./login/loginController.js"></script>
-    <script src="./home/homeController.js"></script>
-    <script src="./usuarios/autenticacionServicio.js"></script>
+    <script src="./app/login/loginController.js"></script>
+    <script src="./app/home/homeController.js"></script>
+    <script src="./app/usuarios/autenticacionServicio.js"></script>
 
 
 
