@@ -1,0 +1,58 @@
+.todo{
+background-color: yellow;
+height: 3em;
+max-width: 100%;
+font-size: 120%;
+
+}
+
+footer {
+  height: 4em;
+  max-width: 100%;
+  background-color: red;
+  font-size: 190%;
+}
+
+hr {
+  height: 5px;
+}
+ .discos{
+   background-color: green;
+ }
+
+ .usuarios{
+   background-color: blueviolet;
+ }
+
+ .locales{
+        background-color: white;
+ }
+
+ .nav{
+      background-color: rgb(255, 0, 191);
+
+ }
+
+ .acceso{
+   background-color: blue;
+ }
+
+ .registro{
+   background-color: cyan;
+ }
+
+ .fondoJuan{
+   background-image: './images/zepelin.jpg; background-position: center; background-size: cover';
+ }
+
+ .data-loading{
+
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left:0;
+  height: 35%;
+  width: 100%;
+  background: rgb(187, 147, 4) url('../images/bear.jpg') 50% 50% no-repeat;
+ }

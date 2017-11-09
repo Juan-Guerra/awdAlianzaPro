@@ -1,0 +1,29 @@
+<div class="discos">
+
+    <h3> Discos </h3>
+
+    <hr>
+
+
+    <input type="text" ng-model="discosModelos.nombre" placeholder="Nombre...">
+
+    <button ng-click="agregarDisco()">Agregar Disco</button>
+
+    <ul>
+
+        <li ng-repeat="disco in discos">
+            <span ng-hide="disco.selected">
+
+                <label>{{disco.nombre}}</label>
+                <label>{{disco.autor}}</label>
+            </span>
+            <span ng-show="disco.selected">
+                <input type="text" ng-model="disco.nombre">
+                <button ng-click="editarDisco(disco)">Agregar Disco a la Colección</button>
+            </span>
+            <button ng-click="oneSelected(disco)">Editar Info de Disco</button>
+            <button ng-click="borrarDisco($index,disco)">Borrar Disco de la Colección</button>
+        </li>
+    </ul>
+
+</div>

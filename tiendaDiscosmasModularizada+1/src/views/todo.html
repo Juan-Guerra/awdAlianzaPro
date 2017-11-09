@@ -1,0 +1,29 @@
+<div class="todo">
+    <label>Información</label>
+    <input type="text" ng-model="nuevoDisco.nombre" placeholder="El disco es...">
+    <input type="text" ng-model="nuevaDisco.autor" placeholder="El autor de éste disco es...">
+    <hr>
+    <span>Discos Disponibles</span><span> <b>{{nuevoDisco.autor}}!</b></span><button ng-click="agregarDisco()">Agregar</button></span>
+    <ul>
+      <li ng-repeat="disco in discos">
+       
+        <span ng-hide="disco.isEditing">
+            <label>{{disco.nombre}}</label>  Creado por :  <label>{{disco.autor}}</label>
+        </span>
+        <span ng-show="disco.isEditing">
+            <input type="text" ng-model="disco.nombre"><button ng-click="editarDisco(disco)">Guardar</button>
+        </span>
+        <button ng-click="editarDisco(disco)">Editar</button>
+        <button ng-click="borrarMemoria(memoria)">Borrar</button>
+       
+      </li>
+    </ul>
+   <hr>
+
+   <div class="progreso" data-loading>
+   
+   </div>
+   
+   <button ng-click="sendToServer()">Enviar al Servidor</button>
+   <label ng-show="isSendit">Valor: {{Discos}}</label>
+</div>
